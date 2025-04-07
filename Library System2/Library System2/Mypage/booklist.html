@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library book-list</title>
+    <link rel="stylesheet" href="booklist.css">
+</head>
+<body>
+    <div class="book-list-page">
+        <h2>Library Book List</h2>
+        
+        <div class="search-filter">
+            <input type="text" id="search-books" placeholder="Search by title, author, ISBN...">
+            <select id="genre-filter">
+                <option value="">Select Genre</option>
+                <option value="fiction">Fiction</option>
+                <option value="non-fiction">Non-fiction</option>
+                <!-- Other genres -->
+            </select>
+            <button onclick="applyFilters()">Apply Filters</button>
+        </div>
+        
+        <table class="book-list">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Genre</th>
+                    <th>Availability</th>
+                </tr>
+            </thead>
+            <tbody id="book-table">
+                <!-- Dynamically populated rows -->
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>
+
+
+
+
+
+
+

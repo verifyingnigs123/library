@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borrowing Book Transaction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1> Book Borrowing</h1>
+        <form action="#" method="post">
+            <label for="student-name">student Name:</label>
+            <input type="text" id="student-name" name="student-name" required>
+            
+            <label for="studentID">studentID:</label>
+            <input type="text" id="studentID" name="studentID" required>
+
+            <h3>Choose the book you want to borrow:</h3>
+             <select name="book" id="book">
+             <option value="Noli Me Tangere">Fundamental oF Database</option> 
+             <option value="Ibong Adarna">Fundamental oF JAVA</option>
+             <option value="El Filibusterismo">Fundamental oF C++</option>
+             <option value="Florante at Laura">Fundamental oF Phyton</option>
+             </select><br><br>
+
+            <div class="Duration">
+                <label>Duration Week</label><br><br>
+                <input type="radio" name=" Duration" value="1 week" required>1 week <br><br> 
+                <input type="radio" name=" Duration" value="2 week" required>2 week <br><br> 
+                <input type="radio" name=" Duration" value="3 week" required>3 week <br><br> 
+            </div>
+
+            <h5 for="agree">
+                <input type="checkbox" id="agree" name="agree" required>
+                I agree to the library rules
+            </h5>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
