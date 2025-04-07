@@ -3,49 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome Student</title>
+    <title>Account Information</title>
     <link rel="stylesheet" href="welcome.css">
 </head>
 <body>
     <div class="account-info">
-        <h2>Welcome, Student Name</h2>
-        <button onclick="logout()">Logout</button>
-        
-        <h3>Borrowed Books</h3>
-        <table class="borrowed-books">
-            <thead>
-                <tr>
-                    <th>Title</th>
-                    <th>Author</th>
-                    <th>Due Date</th>
-                    <th>Return</th>
-                </tr>
-            </thead>
-            <tbody id="books-table">
-                <!-- Dynamically populated rows -->
-            </tbody>
-        </table>
-    </div>
-    <script src="account.js"></script>
-</body>
-</html>
-
-
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Account Information</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="account-info">
         <h2>Welcome student</h2>
-        <button onclick="logout()">Logout</button>
 
         <h3>Borrowed Books</h3>
         <table class="borrowed-books">
@@ -76,11 +39,13 @@
                     <td>George Orwell</td>
                     <td>2025-04-20</td>
                     <td><button onclick="returnBook(3)">Return</button></td>
+                    
                 </tr>
                 <!-- End Sample Book Data -->
             </tbody>
         </table>
     </div>
+    <button onclick="logout()">Logout</button>
 
     <script src="account.js"></script>
 </body>
